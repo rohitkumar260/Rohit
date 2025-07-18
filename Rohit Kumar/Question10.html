@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+
+<body class="light-theme">
+
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+
+    <h1>Theme Toggle Example</h1>
+    <p>This is a simple webpage to switch between light and dark mode.</p>
+
+    <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+
+            // if body has light-theme, change to dark-theme
+            if (body.classList.contains("light-theme")) {
+                body.classList.remove("light-theme");
+                body.classList.add("dark-theme");
+            } else {
+                body.classList.remove("dark-theme");
+                body.classList.add("light-theme");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

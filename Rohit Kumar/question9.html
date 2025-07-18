@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            text-align: center;
+
+        }
+
+        div {
+            margin-top: 100px;
+        }
+
+        button {
+            height: 35px;
+            width: 200px;
+            border-radius: 20px;
+            border: 1px solid rgb(121, 119, 119);
+            background-color: rgb(30, 232, 90);
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(12, 210, 144);
+        }
+    </style>
+    <div>
+        <h2>Click the Button to Show Date and Time</h2>
+
+        <button onclick="showDateTime()">Show Date & Time</button>
+
+        <p id="dateTimeResult"></p>
+    </div>
+    <script>
+        function showDateTime() {
+            var now = new Date(); // get current date and time
+            document.getElementById("dateTimeResult").innerHTML = now;
+        }
+    </script>
+
+</body>
+
+</html>

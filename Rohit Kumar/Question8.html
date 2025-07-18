@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+
+    <style>
+         *{
+            text-align: center;
+            margin-top: 50px;
+         }
+
+         h2{
+            margin-top: 20px;
+         }
+          button{
+            height: 35px;
+            width: 200px;
+            border-radius: 20px;
+             border: 1px solid rgb(121, 119, 119);
+             background-color: rgb(30, 232, 90);
+             margin-top: 10px;
+        }
+         button:hover{
+            background-color: rgb(12, 210, 144);
+        }
+        input{
+             height: 30px;
+            width: 300px;
+            border-radius: 10px;
+            border: 1px solid rgb(121, 119, 119);
+        }
+         
+    </style>
+
+    <h2>Check if a Number is Even or Odd</h2>
+
+  <input type="number" id="userNumber" placeholder="Enter a number">
+  <br>
+  <button onclick="checkEvenOdd()"><b>Check</b></button>
+
+  <p id="result"></p>
+
+  <script>
+    function checkEvenOdd() {
+      var num = document.getElementById("userNumber").value;
+      var result = document.getElementById("result");
+
+      if (num === "") {
+        result.innerHTML = "Please enter a number!";
+        return;
+      }
+
+      if (num % 2 == 0) {
+       alert(num + " is Even");
+      } else {
+       alert(num + " is Odd");
+      }
+    }
+  </script>
+    
+</body>
+</html>

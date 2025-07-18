@@ -1,0 +1,73 @@
+
+/*    Q no 4 Styling the registration form by Using External css */
+
+/*    Styling Q no 2    */
+
+form {
+    border: 2px solid black;
+    width: 800px;
+    margin-left: 360px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: #819ff9;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+.form div {
+    margin-left: 210px;
+    font-size: larger;
+}
+
+.form button {
+    margin-left: 40px;
+    height: 35px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgb(91, 211, 255);
+    border: 1px solid rgb(5, 5, 5);
+    font-size: large;
+    margin-top: 30px;
+}
+
+.form button:hover {
+    background-color: #ff8aad;
+}
+
+form b {
+    font-size: large;
+}
+
+.roll {
+    margin-left: 22px;
+     height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+form .name {
+    margin-left: 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid gray;
+
+}
+
+.email {
+    margin-left: 8px;
+     height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+#profession {
+    height: 30px;
+    width: 305px;
+    border-radius: 8px;
+}
